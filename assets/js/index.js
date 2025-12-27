@@ -1,18 +1,12 @@
 const swiper = new Swiper('.s-creators-swiper', {
-  initialSlide: 4, // 4-й слайд
+  initialSlide: 3, 
   slidesPerView: 'auto',
   spaceBetween: 15,
   loop: true,
-  speed: 800,
+  speed: 600,
   pagination: false,
   navigation: false,
-
-  // по умолчанию — МОБИЛКИ
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-
+  slideToClickedSlide: true,
   breakpoints: {
     1221: {
       spaceBetween: 30,
@@ -33,11 +27,6 @@ const swiper2 = new Swiper('.s-updates-swiper', {
   speed: 800,
   pagination: false,
   navigation: false,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-
   breakpoints: {
     1025: {
       spaceBetween: 30,
